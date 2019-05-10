@@ -1,0 +1,15 @@
+<div>
+    <nav>
+        <a routerLink="" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">  Головна  </a>
+        <a routerLink="/shop" routerLinkActive="active">  Покупки  </a>
+        <a routerLink="/users" routerLinkActive="active">  Користувачі  </a>
+    </nav>
+</div>
+<hr>
+<label>Введіть ім'я:</label>
+<input [(ngModel)]="name" placeholder="name">
+<h1>Вітаємо, {{name}}!</h1>
+<p>Кількість кліків {{count}}</p>
+<button (click)="increase()">Click</button>
+<hr>
+<router-outlet></router-outlet>
